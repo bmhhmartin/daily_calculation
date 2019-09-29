@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise JavaScript</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/practise.js"></script>
+    <script src="js/learn.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main">
+                    <h1>.:Some Calculation:.</h1>
+                    <div class="col-sm-6">
+                        <div class="col-sm-12">
+                            <div class="form-row">
+                                <div class="form-group col-md-9 col-sm-9 row">
+                                    <label>Check Leap Year</label>
+                                    <input type="text" class="form-control" id="in_yr" placeholder="Example: 2012">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-3 col-sm-3 row">
+                                    <button class="btn btn-success" onclick="year()">Check !</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Leap Year Check-->
+                        <div class="col-sm-12">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-9 col-sm-9 row">
+                                        <label>Farenhite to Celcius</label>
+                                        <input type="text" class="form-control" id="temp" placeholder="Example: 338">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3 col-sm-3 row">
+                                        <button class="btn btn-success" onclick="convert()">Convert</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Farenhite to celcius Check-->
+                        <div class="col-sm-12">
+                            <div class="form-group col-md-9 col-sm-9 row">
+                                <label>Enter You Birthdate:</label>
+                                <div id="birth_date_input">
+                                    <input type="date" class="form-control" id="birth_date">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                    <div class="form-group col-md-3 col-sm-3 row">
+                                        <button class="btn btn-success" id="calculate">Your Age</button>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--Age Calculator-->
+                        <div class="col-sm-12">
+                            <div class="form-group col-md-11 col-sm-11 row">
+                                <span class="conv">Converter:</span><br>
+                                <TABLE cellSpacing=0 cellPadding=0 width=250 border=0>
+                                    <FORM name=cminch method="post">
+                                        <label>Enter Centimeter:</label>
+                                        <input type="text" class="form-control cus" onblur=cmconvert()  name=cm placeholder="Enter CM: Example: 157">
+                                        <label>Enter Feet:</label>
+                                        <input type="text" class="form-control cus" onblur=feetconvert()  name=feet placeholder="Enter Feet: Example: 5.9">
+                                        <label>Enter Inch:</label>
+                                        <input type="text" class="form-control cus" onblur=inchconvert()  name=inch placeholder="Enter Inch: Example: 69">
+                                        <input type="button" class="btn btn-success btn-warning" style="text-align: left;" value="Convert" name="B3">
+                                    </FORM>
+                                </TABLE>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="col-sm-3">
+                            <div id="calculator">
+                                <div id='calc-contain'>
+                                    <h3>Normal Calculator</h3>
+                                    <form name="calculator">
+                                        <input type="text" name="answer" class="form-control new" />
+                                        <input type="text" name="top" />
+                                        <br>
+                                        <input type="button" value=" ( " onclick="calculator.answer.value += '('" />
+                                        <input type="button" value=" )" onclick="calculator.answer.value += ')'" />
+                                        <input type="button" value=" { " onclick="calculator.answer.value += '{'" />
+                                        <input type="button" value=" } " onclick="calculator.answer.value += '}'" />
+                                        <br>
+                                        <input type="reset" value=" C " class="reset" onclick="calculator.answer.value = 'C'" />
+                                        <input type="button" value=" . " onclick="calculator.answer.value += '.'" />
+                                        <input type="button" value=" % " onclick="calculator.answer.value += '/100'" />
+                                        <input type="button" value="RS" onclick="calculator.top.value+= Math.sqrt(calculator.answer.value)">
+                                        <br>
+                                        <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                                        <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                                        <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                                        <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+                                        <br/>
+
+                                        <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                                        <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                                        <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                                        <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+                                        <br>
+
+                                        <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+                                        <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+                                        <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+                                        <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+                                        <br>
+
+                                        <input type="button" value=" 00 " onclick="calculator.answer.value += '00'" />
+                                        <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+                                        <input type="button" value=" = " style="background: #02a202; color: #fff;" onclick="calculator.top.value = eval(calculator.answer.value)" />
+                                        <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+                                        <br>
+                                    </form>
+                                </div>
+                            </div>
+                        <!--Calculator-->
+                    </div>
+
+
+
+
+                    <div class="col-sm-3">
+                            <div class="fitness">
+                              <h4>BMI Calculator</h4>
+                              <label>Height in cm: </label>
+                              <input type="text" class="form-control" id="height" value="180" min="0" max="250"><br>
+                              <label>Weight in kg: </label>
+                              <input type="text" class="form-control" id="weight" value="80" min="0" max="350">
+                              <button class="btn btn-success" onclick="calcBMI()">Calculate!</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            function convert() {
+
+                var far = temp.value;
+                var cel;
+                if (far == 0) {
+                    alert('Please enter Farenhite')
+                    return false;
+                }
+                cel = (5 / 9) * (far - 32);
+                alert('Result is ' + cel + ' degree celcius');
+
+
+            }
+            //Farenhite to celcius//
+
+            function year() {
+                var yr = in_yr.value;
+                if (yr == 0) {
+                    alert('Please enter Year')
+                    return false;
+                }
+
+                if ((yr % 4 == 0 && yr % 100 !== 0) || (yr % 400 == 0)) {
+                    alert(yr + ' ' + ': ' + 'is Leap Year');
+                } else {
+                    alert(yr + ' ' + ': ' + 'is not Leap Year');
+                }
+            }
+            //Check leap year//
+
+            $(document).ready(function() {
+                $("#calculate").click(function() {
+                    var mdate = $("#birth_date").val().toString();
+                    var yearThen = parseInt(mdate.substring(0, 4), 10);
+                    var monthThen = parseInt(mdate.substring(5, 7), 10);
+                    var dayThen = parseInt(mdate.substring(8, 10), 10);
+
+                    var today = new Date();
+                    var birthday = new Date(yearThen, monthThen - 1, dayThen);
+
+                    var differenceInMilisecond = today.valueOf() - birthday.valueOf();
+
+                    var year_age = Math.floor(differenceInMilisecond / 31536000000);
+                    var day_age = Math.floor((differenceInMilisecond % 31536000000) / 86400000);
+
+                    if ((today.getMonth() == birthday.getMonth()) && (today.getDate() == birthday.getDate())) {
+                        alert("Happy B'day!!!");
+                    }
+
+                    var month_age = Math.floor(day_age / 30);
+
+                    day_age = day_age % 30;
+
+                    if (isNaN(year_age) || isNaN(month_age) || isNaN(day_age)) {
+                        alert("Please enter your birthday");
+                    } else {
+                        alert("You are " + year_age + " years " + month_age + " months " + day_age + " days old");
+                    }
+                });
+            });
+            //Check your age//
+        </script>
+        <script type="text/javascript">
+
+
+
+function roundit(which){
+return Math.round(which*100)/100
+}
+
+function cmconvert(){
+with (document.cminch){
+feet.value = roundit(cm.value/30.84);
+inch.value = roundit(cm.value/2.54);
+}
+}
+
+function inchconvert(){
+with (document.cminch){
+cm.value = roundit(inch.value*2.54);
+feet.value=roundit(inch.value/12);
+}
+}
+
+function feetconvert(){
+with (document.cminch){
+cm.value=roundit(feet.value*30.48);
+inch.value=roundit(feet.value*12);
+}
+}
+
+</script>
+</body>
+
+</html>

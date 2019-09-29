@@ -1,0 +1,57 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+ 
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+@media(min-width:768px) and (max-width:991px){
+    #calculator #calc-contain {
+		width: 180px;
+	}
+    
+   
+    
+    
+    
+    
+    
+
+    
+}
+
+
+
+
+
+
+
+
+@media(min-width:320px) and (max-width:767px){
+	.main {
+		height: auto;
+	}
+  
+    #calculator #calc-contain {
+		width: 100%;
+	}
+	.btn-success {
+		position: absolute;
+		margin-top: -49px;
+		right: -4%;
+	}
+    
+    
+    
+    
+    
+    
+}
