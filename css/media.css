@@ -44,10 +44,29 @@
 		width: 100%;
 	}
 	.btn-success {
-		position: absolute;
 		margin-top: -49px;
 		right: -4%;
 	}
+    .bmi {
+        margin-top: 20px;
+        left: 0;
+    }
+    #calculator {
+        margin-top: 50px;
+    }
+    .fitness {
+        height: 290px;
+        padding: 15px;
+        background: #2a2a2f;
+        margin-top: 50px;
+    }
+    .main h1 {
+        text-align: center;
+        color: #fff;
+        padding: 20px 0px 50px 0px;
+        font-size: 29px;
+    }
+    
     
     
     
